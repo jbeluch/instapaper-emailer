@@ -1,0 +1,18 @@
+Instapaper Emailer
+
+This script will email you with any new items in your instapaper account
+in the unread queue.  Each time you run the script, it will only email
+any items that are new from the last time it was run.
+
+I wrote this script because I wanted a way to read my instapaper items
+offline.  I run it via cron, and every morning I have my new unread
+articles on my phone to read while I don't have service.
+
+Currently it is setup to use the gmail smtp server.  Simply add your
+gmail credentials to the script and attempt to run it.
+
+** Beware the first time you run the script, it will email you
+everything in your unread queue.  Consider commenting out the call to
+sendmail() the first time you run the script.  This will populate the
+pickle file which keeps track of items in the unread queue that have
+alread been emailed.
