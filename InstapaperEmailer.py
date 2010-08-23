@@ -43,7 +43,7 @@ from BeautifulSoup import BeautifulSoup as BS, SoupStrainer as SS
 from cPickle import Pickler, Unpickler
 
 #gmail/email settings
-HOSTNAME = 'smpt.gmail.com'
+HOSTNAME = 'smtp.gmail.com'
 USERNAME = 'joe@gmail.com'
 PASSWORD = 'password123'
 FROM_ADDR = USERNAME 
