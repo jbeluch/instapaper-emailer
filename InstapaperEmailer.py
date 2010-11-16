@@ -79,7 +79,7 @@ class InstapaperScraper(object):
         return [urlparse.urljoin(self.base_url, a['href']) for a in a_tags]
 
 def sendmail(htmls):
-    server = smtplib.SMTP(HOSTNAME)
+    server = smtplib.SMTP(HOSTNAME, 587)
     #server.set_debuglevel(1)
     server.ehlo()
     server.starttls()
